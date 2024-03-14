@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* Prevents horizontal scrollbar due to the background slider */
+}
+
+#background-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the slider behind other content */
+    overflow: hidden;
+}
+
+#background-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    animation: slide 15s infinite; /* Adjust the time as needed */
+}
+
+@keyframes slide {
+    0%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 70px auto; /* Center the container horizontally */
+}
+
+.logo {
+    width: 60px; /* Adjust the size as needed */
+    margin-right: 10px;
+    margin-left: 160px;
+}
+
+h2 {
+    margin: 10px 0; /* Add space above and below the h2 */
+    margin-right: 10px;
+    margin-left: 150px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.icon-eye {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    margin-top: -45px; /* Adjust as needed */
+    margin-right: 220px;
+}
+
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Oval shape */
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: underline;
+      font-weight: bolder;
+}
